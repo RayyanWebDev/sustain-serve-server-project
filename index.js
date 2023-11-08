@@ -6,8 +6,6 @@ const port = process.env.PORT || 5000;
 //middleware
 app.use(cors());
 app.use(express.json());
-// rayyan3379
-// DHqN3fji4OiR4KrQ
 
 const { MongoClient, ServerApiVersion } = require("mongodb");
 require("dotenv").config();
