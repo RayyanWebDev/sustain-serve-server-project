@@ -37,6 +37,15 @@ async function run() {
 }
 run().catch(console.dir);
 
+app.post("/food", async (req, res) => {
+  try {
+    const body = req.body;
+    res.send(body);
+  } catch (error) {
+    console.log(error);
+  }
+});
+
 app.get("/", (req, res) => {
   res.send("sustain serve server is running");
 });
